@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #616161;
+}
+nav {
+    background-color: #464646;
+    padding: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+}
+nav li {
+    margin: 15px;
+    list-style-type: none;
+}
+nav a {
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+.logo {
+    color: #00eaff;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #565656;
+    border-radius: 10px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+.search-input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+.search-button {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #00a52d;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.search-button:hover {
+    background-color: aqua;
+}
+.info {
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+.info4 {
+    padding: 15px;
+    background-color: black;
+}
+.info4 h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.img1 img {
+    width: 1200px;
+    border-radius: 4px;
+}
+.imges {
+    display: flex;
+    justify-content: space-around;
+}
+.t1 {
+    color: white;
+    text-align: center;
+    background-color: #4b5155;
+    padding: 15px;
+    width: 1500px;
+    margin: 15px auto;
+}
+.t2 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: #4b5155;
+}
+.t3 {
+    color: white;
+    text-align: center;
+}
+.t1 p {
+    padding: 10px;
+    font-size: 20px;
+}
+.t11 {
+    padding: 10px;
+}
+.t12 img {
+    padding: 15px;
+    animation-name: certificate;
+    animation-duration: 1s;
+}
+.t11 img {
+    padding: 15px;
+    margin-top: 25px;
+    animation-name: certificate;
+    animation-duration: 1s;
+}
+.t11 a {
+    background-color: #2cba6b;
+    border-radius: 5px;
+}
+.t11 h1 {
+    padding: 20px;
+}
+.t11 a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+.conall {
+    background-color: #4b5155;
+    width: 500px;
+    margin: 0 auto;
+}
+.contact {
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    animation-name: certificate;
+    animation-duration: 1s;
+}
+.contact h1 {
+    padding: 10px;
+}
+.contact img {
+    width: 140px;
+    transition: 0.7s;
+}
+.contact img:hover {
+    transform: scale(1.1);
+}
+@keyframes certificate {
+    from {
+        transform: translate(-90px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+.icons img {
+    width: 250px;
+    transition: 0.7s;
+}
+.icons img:hover {
+    transform: scale(0.5);
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.menu-btn {
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    user-select: none;
+}
+.imges img {
+    height: 1000px;
+}
+@media (max-width: 768px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+    nav ul {
+        display: none;
+        margin: 0;
+        padding: 15px;
+    }
+    nav li {
+        margin: 0;
+        padding: 15px;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .search-container {
+        display: block;
+    }
+    .info {
+        display: block;
+    }
+    .info2 {
+        display: block;
+    }
+    .img1 img {
+        width: 100%;
+        height: 100%;
+    }
+    .imges img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 10px;
+    }
+    .t1 {
+        margin: 0;
+        width: 100%;
+    }
+    .icons img {
+        width: 100%;
+    }
+    .t12 img {
+        width: 100%;
+    }
+    .conall {
+        width: 75%;
+    }
+}
